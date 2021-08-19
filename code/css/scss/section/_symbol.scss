@@ -1,0 +1,101 @@
+.symbol {
+  margin-top: -200px;
+  margin-left: 8%;
+  margin-right: 8%;
+  .symbol-topbox {
+    background-color: #d4145a;
+    opacity: 0.8;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    margin-bottom: 40px;
+    h2,
+    h3 {
+      color: #fff;
+      line-height: 200%;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  .symbol-box {
+    img {
+      width: 5%;
+      min-width: 50px;
+      max-width: 80px;
+    }
+    h3 {
+      color: #d4145a;
+      margin: 15px 0;
+      letter-spacing: 0.4em;
+    }
+  }
+  .purpose {
+    margin-bottom: 50px;
+  }
+  .application {
+    margin-bottom: 50px;
+    span {
+      color: #d4145a;
+    }
+  }
+  .postcard {
+    margin-bottom: 50px;
+    display: flex;
+    border: solid 2px #d4145a;
+    img {
+      margin: 30px;
+      width: 70px;
+    }
+    h3 {
+      margin-top: 30px;
+    }
+  }
+  .mail {
+    border: solid 2px #d4145a;
+    display: flex;
+    h3 {
+      margin-top: 30px;
+    }
+    span {
+      color: #d4145a;
+    }
+    .mail-logo {
+      margin: 30px;
+      width: 70px;
+    }
+    div {
+      align-items: center;
+    }
+    .QRcode {
+      margin: 15px;
+      width: 15%;
+      max-width: 100px;
+    }
+  }
+  .contact {
+    margin-top: 50px;
+  }
+  @include underSp {
+    .postcard {
+      display: block;
+      padding: 0 15px 15px 15px;
+      img {
+        display: none;
+      }
+    }
+    .mail {
+      display: block;
+      padding: 0 15px;
+      word-break: break-all;
+      .mail-logo {
+        display: none;
+      }
+      .QRcode {
+        display: block;
+        width: 65%;
+        max-width: 200px;
+        margin: 15px auto;
+      }
+    }
+  }
+}
