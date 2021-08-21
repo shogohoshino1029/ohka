@@ -1,0 +1,20 @@
+// レスポンシブ
+@mixin underSp {
+  @media print, screen and (max-width: 768px) {
+    @content;
+  }
+}
+// レスポンシブ
+@mixin underTab {
+  @media print, screen and (max-width: 1080px) {
+    @content;
+  }
+}
+@include underSp {
+  .sp {
+    display: block;
+  }
+  .pc {
+    display: none;
+  }
+}
